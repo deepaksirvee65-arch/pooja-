@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Pooja ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#000,#2b0018);
+overflow-x:hidden;
+color:white;
+text-align:center;
+}
+
+/* Background */
+.background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-2;
+opacity:.07;
+font-size:60px;
+font-weight:bold;
+line-height:90px;
+color:white;
+user-select:none;
+padding:20px;
+animation:move 30s linear infinite;
+}
+
+@keyframes move{
+0%{transform:translateY(0);}
+100%{transform:translateY(-250px);}
+}
+
+.container{
+width:90%;
+max-width:850px;
+margin:auto;
+padding:50px 20px;
+}
+
+h1{
+font-family:'Dancing Script',cursive;
+font-size:65px;
+color:#ff4f8b;
+margin-bottom:20px;
+}
+
+.heart{
+font-size:70px;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.2);}
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+margin-top:20px;
+}
+
+.quote{
+font-size:34px;
+font-family:'Dancing Script',cursive;
+color:#ff80aa;
+margin-top:30px;
+}
+
+.proposal{
+margin-top:60px;
+font-size:45px;
+font-family:'Dancing Script',cursive;
+color:#ff4f8b;
+animation:glow 2s infinite;
+}
+
+@keyframes glow{
+50%{
+text-shadow:0 0 25px #ff0066;
+}
+}
+
+input{
+margin-top:40px;
+padding:15px;
+width:300px;
+border:none;
+border-radius:40px;
+font-size:20px;
+text-align:center;
+}
+
+button{
+margin-top:20px;
+padding:15px 35px;
+border:none;
+background:#ff0066;
+color:white;
+font-size:20px;
+border-radius:40px;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+#error{
+margin-top:20px;
+color:#ff7070;
+font-size:20px;
+}
+
+#success{
+display:none;
+padding:80px 20px;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+.big{
+font-size:70px;
+font-family:'Dancing Script',cursive;
+color:#ff4f8b;
+}
+
+.fire{
+font-size:80px;
+animation:beat 1s infinite;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background">
+
+POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA
+
+POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA
+
+POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA
+
+POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA POOJA
+
+</div>
+
+<div class="container" id="page1">
+
+<div class="heart">❤️</div>
+
+<h1>Dear Pooja Ji</h1>
+
+<p>
+Whenever I smile, somewhere your name is the reason.
+</p>
+
+<p>
+Whenever I pray, your happiness is always my first wish.
+</p>
+
+<p>
+I don't know what destiny has written for us...
+But every dream I have ends with only one name...
+</p>
+
+<div class="quote">
+"POOJA"
+</div>
+
+<p>
+You are my peace.
+<br>
+You are my happiness.
+<br>
+You are my safe place.
+<br>
+You are my forever.
+</p>
+
+<p>
+If life gives me a thousand choices,
+I will choose YOU a thousand times.
+</p>
+
+<div class="proposal">
+Will You Accept My Love Forever? ❤️
+</div>
+
+<input id="love" placeholder="think i used to say u more">
+
+<br>
+
+<button onclick="checkLove()">Open My Heart ❤️</button>
+
+<div id="error"></div>
+
+</div>
+
+<div id="success">
+
+<div class="fire">🎉❤️🎉</div>
+
+<div class="big">
+Thank You Pooja ❤️
+</div>
+
+<p>
+<div class="gallery">
+    <img src="C:/Users/admin/Desktop/p/1.jpg" alt="Pooja">
+    <img src="images/photo2.jpg" alt="Pooja">
+    <img src="images/photo3.jpg" alt="Pooja">
+    <img src="images/photo4.jpg" alt="Pooja">
+</div>
+You just unlocked the most beautiful place...
+
+My Heart.
+
+Today...
+
+Tomorrow...
+
+Forever...
+
+No matter how difficult life becomes,
+
+I promise I will always stand beside you.
+
+Every heartbeat of mine whispers only one name...
+
+❤️ POOJA ❤️
+
+I Love You More Than Words Can Ever Explain.
+
+Will You Stay With Me Forever?
+
+🌹❤️🌹
+
+</p>
+
+</div>
+
+<script>
+
+function checkLove(){
+
+let text=document.getElementById("love").value.toLowerCase().trim();
+
+if(text=="i love u" || text=="i love you"){
+
+document.getElementById("page1").style.display="none";
+
+document.getElementById("success").style.display="block";
+
+document.body.style.background="linear-gradient(135deg,#ff0066,#5a001f)";
+
+}
+
+else{
+
+document.getElementById("error").innerHTML="❤️ socho pooja socho u know type it ❤️";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
